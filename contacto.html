@@ -1,67 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Burgers </title>
-    <link rel="shortcut icon" href="img/Captura de Pantalla 2022-08-07 a la(s) 9.13.10.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/estilos.css">
-    <link rel="stylesheet" href="styles/animate.css">
-</head>
-<body>
-    <nav class="nav-edit">
-        <a href="index.html">
-            <img src="Img/Logo_final1.png" alt="logo" class="logo_img-fluid">
-        </a>  
-        <ul>
-            <li>
-          <a href="conocenos.html">CONOCENOS</a>  
-            </li>
-            <li>
-                <a href="menu.html">MENU</a>
-            </li>
-            <li>
-                <a href="novedades.html">NOVEDADES</a>
-            </li>
-            <li>
-                <a href="eventos.html">EVENTOS</a>
-            </li>
-            <li>
-                <a href="contacto.html">CONTACTO</a>
-            </li>
-        </ul>
-    </nav>
-    <header class="encabezado"> 
-    </header>
-<main> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Bootstrap CSS -->   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   
+<!-- Mi css -->
+
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <link rel="stylesheet" href="./styles/animate.css">
+
+
+  <title>Rock Burgers</title>
+  </head>
+  <body>
+<!-- inicia nav -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./Img/Logo_final.png" alt="logo_rockBurguers">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="conocenos.html">CONOCENOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="novedades.html">NOVEDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eventos.html">EVENTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item dropdown">
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- ends nav -->
+
+
+<!-- inicia carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Img/Carrousel_uno.svg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Img/carrousel_dos.svg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Img/carrousel_tres.svg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+<!-- ends carousel -->
+<main class="contacto_rockburguers"> 
     <section>
         <h1 class=" wow rotateInDownLeft" data-wow-duration="3s" data-wow-delay="0s" data-wow-iteration="2"> ROCK BURGERS CONTACTO</h1>
             <h4> Escribenos tus comentarios, un miembro de nuestro equipo se comunicara contigo</h4>
     <div class="contacto_caja">
         </section>
-            <section class="contacto_formulario--m">    
-        <form action="">
-        <label class="etiquetas_texto--s" for="Nombre">Nombre:</label>
-            <input type="text"  id="Nombre" placeholder="Ingrese su nombre">
-            <br>
-        <label class="etiquetas_texto--s"  for="Email">Email:</label>
-            <input type="email" placeholder="dd/mm/aaaa">
-            <br>
-        <label class="etiquetas_texto--s" for="Tel">Telefono:</label>
-            <input type="Tel" id="Tel">
-            <br>
-        <label class="etiquetas_texto--s" for="Comentario"> Queremos saber que opinas:</label>
-            <br>
-        <textarea name="" id="Comentario" cols="30" rows="10"></textarea>
-            <br>
-        <div class="botonera">
-            <input class="etiquetas_texto_cancelar--s"  type="reset" value="Cancelar">
-            <input class="etiquetas_texto_enviar--s" type="Submit" value="Enviar">  
-        </div>
 
-        </form>
-    </section>    
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"> Queremos saber que opinas:</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+      <div class="botonera">
+        <input class="etiquetas_texto_cancelar--s"  type="reset" value="Cancelar">
+        <input class="etiquetas_texto_enviar--s" type="Submit" value="Enviar">  
+    </div>
+
+    </div>
 
     <section class="contacto_iframe-l">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.368302883132!2d-99.69019201193535!3d19.305261664876262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8828a62652e3%3A0x1eee4267d14f0229!2sDelegaci%C3%B3n%20San%20Mateo%20Oxtotitl%C3%A1n%2C%2050100%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1659652425832!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
