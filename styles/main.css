@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik+Distressed&family=Rubik+Maze&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  font-family: "Gloria Hallelujah";
+  font-size: 20px;
+  font-weight: 600;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(216, 162, 68);
+  font-weight: 400;
+  background-size: 100% 2px;
+}
+
+nav {
+  Background: rgb(103, 80, 80);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+}/*# sourceMappingURL=main.css.map */

@@ -152,7 +152,7 @@ nav ul{
     font-size: 22px;
 
 }
-.novedades_parrafo--m, .menu_parrafo--m, .eventos_parrafo--m, .conocenos_parrafo--m {
+.novedades_parrafo--m, .menu_parrafo--m, .eventos_parrafo--m, .conocenos_parrafo--m, .card-text {
 
     color:rgb(99, 61, 61);
     text-decoration: none;
@@ -176,7 +176,7 @@ nav ul{
 
 li{
 
-    color:rgb(39, 36, 34);
+    color:rgb(255, 255, 255);
     text-decoration: none;
     font-family:'Indie Flower', cursive;
     font-size: 18px;
@@ -283,6 +283,8 @@ figcaption{
     margin: 30px;
     padding:5px ;
 }
+
+
 
 .conocenos_img--m{
 width: 420px;
@@ -449,7 +451,7 @@ justify-content:center ;
 
 /* GRIDS INDEX */
 
-.text_style{
+/*.index_container{
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -457,8 +459,9 @@ justify-content:center ;
 
     height: 700px;
     width: 900px;
-}
+} */
 
+/*
 .main_titulo--xl{
     grid-column-start: 1;
     grid-column-end: 5;
@@ -469,7 +472,7 @@ justify-content:center ;
 .introduccion_index-l{
  
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
  
@@ -479,6 +482,14 @@ justify-content:center ;
     text-align: left;
 }
 
+.py-3{
+   grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/*
 .articulo_index_m{
     grid-column-start: 4;
     grid-column-end: 5;
@@ -506,7 +517,7 @@ justify-content:center ;
     margin: 30px;
 }
 
-
+*/
 
 /*MOBILE FIRST INDEX
 #body_index--l{
@@ -726,17 +737,17 @@ header{
 
 /* ANIMACIONES*/
 
-.brisket_especialidad--l:hover{
+.row:hover{
     transform: translate(-10px, 10px);
     cursor:pointer;
-    transition: brisket_especialidad--l 3s;
+    transition: row 3s;
 
 }
 
-.pulled_especialidad--l:hover{
+.card:hover{
     transform: translate(-10px, 10px);
     cursor:pointer; 
-    transition: pulled_especialidad--l 5s;
+    transition: card 5s;
 }
 
 .etiquetas_texto_cancelar--s{
@@ -777,19 +788,13 @@ header{
 
 .botonera{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     width: 250px;
     height: 25px;
 
 }
 
-@keyframes header_animation{
-    0%{ background-image: url(../Img/Pulled-pork-Etika-Food-v2-1.jpg)}
-    50%{ background-image: url(../Img/carneasada_header1.jpg)}
-    100%{ background-image: url(../Img/hamburguesa_header2.jpg)}
-
-}
 
 header{
     height: 90vh;
@@ -797,4 +802,61 @@ header{
     animation-name: header_animation;
     animation-duration: 8s;
     animation-iteration-count: infinite;
+}
+/*
+.card text-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+*/
+p.card-text{
+    text-align: center;
+}
+
+h5.card-title{
+    margin: 1px;
+}
+
+
+
+.nav-link{
+    display: flex;
+    justify-content: space-around;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-family:'Indie Flower', cursive;
+    font-size: 23px;
+    padding: 5px;
+    margin: 10px 60px;
+
+}
+
+
+.card-text{
+
+    text-align: left;
+}
+
+div.card.mb-3{
+
+    background-color: rgb(255, 187, 0);
+    width: 100%;
+    height: auto;
+    margin: 35px 35px;
+    padding: 20px 20px;
+    border: dashed black 4px;
+
+}
+
+p.card-text{
+
+    text-align: left;
+    font-family:'Gloria Hallelujah';
+    font-size: 25px;
+
+}
+
+main.contacto_rockburguers{
+    margin: 35px
 }
