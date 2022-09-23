@@ -20,3 +20,24 @@
     font-weight: $textregular;
 
 }
+
+.eventos_parrafo--m{
+    @extend .eventos_parrafo--m;
+    width: 90%;
+    height: auto;
+    margin:50px auto;
+}
+
+.container_novedades{
+    @extend .conocenos_parrafo--m;
+    border-radius: 2px;
+}
+
+@mixin parrafos ($size,$interlineado,$color){
+
+}
+
+p{
+    @include parrafos (2em,2.2 em, rgb(0, 0, 0))
+}
+
