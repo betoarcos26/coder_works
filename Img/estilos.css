@@ -25,26 +25,14 @@ h2{
     margin:25px
 }
 
-h2.title_menu_dos_m{
-
-    color: rgb(182, 59, 35);
-    font-family: "Dancing Script";
-    font-size: 30px;
-    padding: 5px;
-    margin:25px;
-    text-align: center
-}
-
 
 h3{
     color: rgb(182, 59, 35);
     font-family: "Dancing Script";
     font-size: 30px;
     padding: 5px;
-    margin:10px;
-    text-align: center; 
+    margin:25px
 }
-
 
 h4{
     color: rgb(182, 59, 35);
@@ -64,6 +52,17 @@ h5{
     padding: 5px;
     margin:25px  
 
+}
+
+h6{
+   
+    color: rgb(182, 59, 35);
+    font-family: "Dancing Script";
+    text-align: left;
+    font-size: 22px;
+    padding: 5px;
+    margin: 10px; 
+    text-align: center; 
 }
 
 
@@ -833,6 +832,56 @@ h5.card-title{
 
 }
 
+#index_container_proceso--m{
+    display:grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "p_menu" 
+    "p_flecha" 
+    "p_elige"
+    "p_flecha" 
+    "p_pedido" 
+    "p_flecha" 
+    "p_direccion" 
+    "p_flecha" 
+    "p_pago";
+
+}
+
+.p_menu{
+    grid-area: p_menu;
+}
+
+.p_elige{
+    grid-area: p_elige;
+}
+
+.p_pedido{
+    grid-area: p_pedido;
+}
+
+.p_direccion{
+    grid-area: p_direccion;
+}
+
+.p_pago{
+    grid-area: p_pago;
+}
+
+.p_flecha{
+    grid-area: p_flecha;
+}
+
+@media (min-width:1024px){
+	.index_container_proceso--m{
+		grid-template-columns:12vw 10vw 12vw 10vw 12vw 10vw 12vw 10vw 12vw;
+		grid-template-areas: 
+		"p_menu p_flecha p_elige p_flecha p_pedido p_flecha p_direccion p_flecha p_pago"
+        }
+
+}
 
 .card-text{
 
@@ -847,28 +896,10 @@ div.card.mb-3{
     margin: 35px 35px;
     padding: 20px 20px;
     border: dashed black 4px;
-
-}
-
-p.card-text{
-
     text-align: left;
-    font-family:'Gloria Hallelujah';
-    font-size: 25px;
 
 }
 
 main.contacto_rockburguers{
-    margin: 35px
-}
-
-h4 .card-title{
-
-    text-align: center;
-}
-
-p.card-text_eventos{
-    text-align: center;
-    font-family:'Indie Flower';
-    font-size: 25px;
+    margin: 30px
 }
